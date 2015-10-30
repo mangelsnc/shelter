@@ -1,5 +1,32 @@
 {
+    "name": "mangelsnc/shelter",
+    "description": "Simple Animal Shelter Manager",
+    "version": "v0.1.0",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miguel Ángel Sánchez Chordi",
+            "email": "mangel.snc@gmail.com",
+            "homepage": "http://github.com/mangelsnc",
+            "role": "Developer"
+        },
+        {
+            "name": "Alberto Martos Torreblanca",
+            "email": "almartostorreblanca@gmail.com",
+            "homepage": "http://github.com/almartos",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shelter\\": "src/Shelter"
+        }
+    },
     "require": {
         "silex/silex": "~1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.0.*"
     }
 }
