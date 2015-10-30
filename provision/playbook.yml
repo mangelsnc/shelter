@@ -9,7 +9,6 @@
     - nginx
     - mysql
     - mongodb
-    - rabbitmq
     - php
     - xdebug
     - composer

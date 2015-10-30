@@ -27,10 +27,9 @@ rabbitmq:
 php:
     install: '1'
     ppa: php5-5.6
-    packages: [php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-imagick, php5-fpm, php5-geoip, php5-mbstring, php5-memcached, php5-mysql, php5-xdebug, php5-common, php-pear, php5-mongo]
+    packages: [php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-imagick, php5-fpm, php5-geoip, php5-memcached, php5-mysql, php5-xdebug, php5-common, php-pear, php5-mongo]
     peclpackages: [memcached, ZendOpcache, mongo, mysql, fpdf, yaml, imagick, intl]
 xdebug:
     install: '1'
 composer:
     install: '1'
-
