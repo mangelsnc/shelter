@@ -1,0 +1,36 @@
+---
+server:
+    install: '1'
+    packages: [vim, git, htop, imagemagick, nodejs, npm]
+    timezone: Europe/Madrid
+    locale: en_US.UTF-8
+vagrant_local:
+    install: '1'
+    vm: { base_box: trusty64, hostname: shelter.org, ip: 192.168.69.69, memory: '1024', sharedfolder: ./, useVagrantCloud: '1', syncType: nfs }
+nginx:
+    install: '1'
+    docroot: /vagrant
+    servername: shelter.org
+mysql:
+    install: '1'
+    root_password: vagrant
+    database: db
+    user: vagrant
+    password: vagrant
+    dump: ''
+mongodb:
+    install: '1'
+rabbitmq:
+    install: '1'
+    user: vagrant
+    password: vagrant
+php:
+    install: '1'
+    ppa: php5-5.6
+    packages: [php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-imagick, php5-fpm, php5-geoip, php5-mbstring, php5-memcached, php5-mysql, php5-xdebug, php5-common, php-pear, php5-mongo]
+    peclpackages: [memcached, ZendOpcache, mongo, mysql, fpdf, yaml, imagick, intl]
+xdebug:
+    install: '1'
+composer:
+    install: '1'
+
