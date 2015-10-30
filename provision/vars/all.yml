@@ -1,15 +1,15 @@
 ---
 server:
     install: '1'
-    packages: [vim, git, htop, imagemagick, nodejs, npm]
+    packages: [vim, git, htop, imagemagick, nodejs, npm, language-pack-es]
     timezone: Europe/Madrid
-    locale: en_US.UTF-8
+    locale: esf_ES.UTF-8
 vagrant_local:
     install: '1'
     vm: { base_box: trusty64, hostname: shelter.org, ip: 192.168.69.69, memory: '1024', sharedfolder: ./, useVagrantCloud: '1', syncType: nfs }
 nginx:
     install: '1'
-    docroot: /vagrant
+    docroot: /vagrant/web
     servername: shelter.org
 mysql:
     install: '1'
